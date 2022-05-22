@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPTRAINNERS</title>
+    <link rel="icon" href="../imgs/logo verde sem fundo e cortada.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ffff;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        .header {
+            border-bottom: 4px solid #17244d;
+            box-shadow: #17244d;
+        }
+
+        .header .container {
+            justify-content: space-between;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #07cd09;
+        }
+
+        .agora {
+            font-weight: 800;
+        }
+
+        .navbar {
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            color: #07cd09;
+        }
+
+
+        .titulo {
+            margin-right: 340px;
+            color: #07cd09;
+            width: fit-content;
+            font-weight: 500;
+        }
+
+        #logo_1 {
+            margin-left: 30px;
+            height: fit-content;
+
+        }
+
+        a:link {
+            font-weight: Segoe UI;
+            color: #17244d;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0px 13px 0px 13px;
+        }
+
+        a:visited {
+            color: #17244d;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            font-weight: Segoe UI;
+            background-color: #d0e2eaab;
+            color: #2c7da2;
+            border-radius: 8px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f2fafd;
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #6dc740;
+            border: 0.1px solid #17244d;
+            border-radius: 3px;
+        }
+
+
+        /* BANNER */
+
+        .banner {
+            height: fit-content;
+            padding: 40px 0;
+            color: white;
+            background-image: url("../imgs/banner_com_letra.jpg");
+            background-size: cover;
+
+border-bottom: 4px solid #17244d;
+            
+        }
+
+        .banner {
+            height: 480px;
+            font-size: 36px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tamanho-conteudo {
+            height: fit-content !important;
+        }
+
+        .banner p {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            width: 280px;
+            font-size: 36px;
+        }
+
+        
+
+        .banner_1 {
+            height: 500px;
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+       
+
+        }
+
+        .espaco1.espaco2.espaco3{
+     
+         height: 100%;
+        }
+
+
+
+        .espaco1{
+            margin-left: 5px;
+
+width: 33.3%;
+        }
+
+        .espaco2{
+            width: 33.3%;
+border-left: #17244d 3px solid;
+
+        }
+        .espaco3{
+            border-left: #17244d 3px solid;      
+
+width: 33.3%;
+
+        }
+        #imgs {
+border-radius: 3px;
+border: #17244d 1px solid;
+
+        }
+
+        /*FOOTER*/
+
+        .footer {
+height: 200px;
+width: 100%;
+background-color: #6dc740;
+border-top: 4px solid #17244d;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <h1 class="titulo">UpTrainners</h1>
+            <ul class="navbar">
+                <li class="agora">Inicial</li>
+                <li>
+                    <a href="./simulador.html">Simulador</a>
+                </li>
+                <li>
+                    <a href="./historia.html">Historia do vôlei</a>
+                </li>
+
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a href="./cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+
+    <div class="banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="banner_1">
+
+        <div class="espaco1"> 
+        <img id="imgs" onclick="curso_img()"  href="./curso.html" style="height: 430px; width: 80%; margin-left: 40px;  margin-top: 15px;" src="../imgs/his.png" alt="">
+        </div>
+        <div class="espaco2">
+            <img id="imgs" style="height: 430px; width: 80%; margin-left: 40px;  margin-top: 15px;" src="../imgs/curso.png" alt="">
+        </div>
+        <div class="espaco3">
+            <img id="imgs" style="height: 430px; width: 80%; margin-left: 40px; margin-top: 15px;" src="../imgs/quiz.png" alt="">
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
