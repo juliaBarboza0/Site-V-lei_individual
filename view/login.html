@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPTRAINNERS</title>
+    <title>Login</title>
     <link rel="icon" href="../imgs/logo verde sem fundo e cortada.png">
     <style>
         body {
@@ -23,11 +23,11 @@
 
         .header {
             border-bottom: 4px solid #17244d;
-           background-color: white;
-           position: fixed;
-           width: 100%;
-           z-index: 100;
-           
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+
         }
 
         .header .container {
@@ -50,7 +50,7 @@
             justify-content: space-between;
             list-style: none;
             color: #07cd09;
-           
+
         }
 
 
@@ -110,132 +110,95 @@
             border-radius: 3px;
         }
 
-
-        /* BANNER */
-
-        .banner {
-            height: fit-content;    
-            padding: 40px 0;
-            color: white;
-            background-image: url("../imgs/banner_com_letra.jpg");
-            background-size: cover;
-
-border-bottom: 4px solid #17244d;
-            
-        }
-
-        .banner {
-            height: 480px;
-            font-size: 36px;
+        #banner {
+            background-image: url(../imgs/Design\ sem\ nome.png);
+            height: 650px;
+            width: 100%;
+            display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .tamanho-conteudo {
-            height: fit-content !important;
-        }
-
-        .banner p {
-            width: 50%;
-            margin: 0;
-            padding: 0;
-            width: 280px;
-            font-size: 36px;
-        }
-
-        .saiba_mais{
-           height: 100px;
-width: 100%;
-display: flex;
-justify-content: center;
-  align-items: center;
 
 
         }
-        h2{
-color: #07cd09;
-font-weight: Segoe UI;
-text-shadow: 1px 1px 2px #135e14;
-font-size: 40px;
 
-
-} 
-
-        .banner_1 {
-            height: 500px;
-            width: 100%;
-            justify-content: space-around;
-            display: flex;
-       
-
-        }
-
-        .espaco1.espaco2.espaco3{
-    
-         height: 100%;
-        }
-
-
-
-        .espaco1{
-            margin-left: 5px;
-
-width: 33.3%;
-        }
-
-        .espaco2{
-            width: 33.3%;
-
-
-        }
-        .espaco3{
-                
-
-width: 33.3%;
-
-        }
-        #imgs {
+        .container1 {
+            height: 350px;
+            background-color: #6dc740;
            
-border-radius: 8px;
-border: #17244d 2px solid;
-box-shadow: 3px 3px 3px black ;
+            display: flex;
+            flex-direction: row;
+
+            border-radius: 15px;
+            width: 50%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
 
         }
-        #imgs:hover {
-          
-        -webkit-transform: scale(1.1);
+        .textos{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .ti2{
+color: black;
+
+
+        }
+
+        .container2 {
+            background-color: white;
+            height: 95%;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 30px;
+            
+            padding: 9px;
+            display: flex;
+            flex-direction: column;
+            border-bottom-right-radius: 14px;
+            border-top-right-radius: 14px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .btn{
+            background-color: #79d34c;
+        
+color: #17244d;
+width: 70%;
+height: 27px;
+border-radius: 5px;
+
+
+
+        }
+        .btn:hover{
+            -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
-       
-            margin: auto;
-            display: inline-block;
+        border-radius: 5px;
+
+        
         }
-
-        /*FOOTER*/
-
-        .footer {
-height: 200px;
-width: 100%;
-background-color: #6dc740;
-border-top: 4px solid #17244d;
-
-        }
-
     </style>
-
-
 </head>
 
 <body>
+
+
     <div class="header">
         <div class="container">
             <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
-                <li class="agora">Inicial</li>
-               
+                <li class="agora">Login</li>
+
                 <li>
-                    <a href="./login.html">Login</a>
+                    <a href="./Home.html">Home</a>
                 </li>
                 <li>
                     <a href="./cadastro.html">Cadastro</a>
@@ -243,42 +206,42 @@ border-top: 4px solid #17244d;
             </ul>
         </div>
     </div>
-  
 
-    <div class="banner">
-        <div class="container">
+    <div id="banner">
+
+        <div class="container1">
+            <div class="textos">
+                <h2 class="titulo1">Ola!</h2>
+                <p class="ti2">Entre com as suas informações <br>
+                Clique no botão abaixo caso não tenha cadastro</p>
+                <button  class="btn">Cadastrar</button>
+            </div>
+            <div class="container2">
+                <p class="t">Use seu email:</p>
+                
+                <form class="form">
+
+                    <label class="input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <p class="t">Use sua senha:</p>
+                    <label class="input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <br>
+                    <button class="btn">sign in</button>
+                </form>
+            </div>
+
+
+
         </div>
-    </div>
-    <div class="saiba_mais">
- <h2 id="">SAIBA MAIS:</h1>
-    </div>
-    <div class="banner_1">
-
-        <div class="espaco1"> 
-        <img id="imgs"  onclick="historia()" style="height: 430px; width: 80%; margin-left: 40px;  margin-top: 30px;" src="../imgs/his.png" alt="">
-        </div>
-        <div class="espaco2">
-            <img id="imgs" onclick="curso()" href="./curso.html" style="height: 430px; width: 80%; margin-left: 40px;  margin-top: 30px;" src="../imgs/curso.png" alt="">
-        </div>
-        <div class="espaco3">
-            <img id="imgs" href="./quiz.html" style="height: 430px; width: 80%; margin-left: 40px; margin-top: 30px;" src="../imgs/quiz.png" alt="">
-
-
-        </div>
 
 
 
     </div>
-
-    <div class="footer">
-
-    </div>
-
-
-
-
-
-
 
 </body>
 
