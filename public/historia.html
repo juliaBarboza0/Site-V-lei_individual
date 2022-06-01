@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>UPTRAINNERS</title>
     <link rel="icon" href="../imgs/logo verde sem fundo e cortada.png">
     <style>
+        /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_transform */
         body {
             margin: 0;
             padding: 0;
@@ -110,95 +111,53 @@
             border-radius: 3px;
         }
 
-        #banner {
-            background-image: url(../imgs/Design\ sem\ nome.png);
-            height: 650px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        .tituloH {
+            margin-top: 7.5%;
+            text-align: center;
+            font-size: 300%;
+            color: #6dc740;
+            text-shadow: 3px 3px 3px #529431;
+            border-bottom: #529431 4px solid;
+        }
+
+        .historiaTEXT {
+            width: 60%;
+            font-size: 119%;
+            margin: 0.7%;
+            border: red 1px solid;
 
 
         }
+.imgH {
+height: 10px;
+margin-left: 5px;
+width: 30%;
 
-        .container1 {
-            height: 350px;
-            background-color: #6dc740;
-           
-            display: flex;
-            flex-direction: row;
-
-            border-radius: 15px;
-            width: 50%;
-            height: 50%;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-        }
-        .textos{
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            font-size: 20px;
-        }
-        .ti2{
-color: black;
+}
+.divona {
+width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height:300px
+}
 
 
-        }
-
-        .container2 {
-            background-color: white;
-            height: 95%;
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 30px;
-            
-            padding: 9px;
-            display: flex;
-            flex-direction: column;
-            border-bottom-right-radius: 14px;
-            border-top-right-radius: 14px;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .btn{
-            background-color: #79d34c;
-        
-color: #17244d;
-width: 70%;
-height: 27px;
-border-radius: 5px;
-
-
-
-        }
-        .btn:hover{
-            -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        border-radius: 5px;
-
-        
-        }
     </style>
+
+
 </head>
 
 <body>
-
-
     <div class="header">
         <div class="container">
             <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
-                <li class="agora">Login</li>
+                <li class="agora">Historia do voleibol</li>
 
                 <li>
-                    <a href="./Home.html">Home</a>
+                    <a href="./login.html">Login</a>
                 </li>
                 <li>
                     <a href="./cadastro.html">Cadastro</a>
@@ -207,42 +166,58 @@ border-radius: 5px;
         </div>
     </div>
 
-    <div id="banner">
 
-        <div class="container1">
-            <div class="textos">
-                <h2 class="titulo1">Ola!</h2>
-                <p class="ti2">Entre com as suas informações <br>
-                Clique no botão abaixo caso não tenha cadastro</p>
-                <button  class="btn">Cadastrar</button>
-            </div>
-            <div class="container2">
-                <p class="t">Use seu email:</p>
-                
-                <form class="form">
-
-                    <label class="input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email">
-                    </label>
-                    <p class="t">Use sua senha:</p>
-                    <label class="input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                    <br>
-                    <button class="btn">sign in</button>
-                </form>
-            </div>
-
-
-
+    <div class="banner">
+        <div class="container">
         </div>
+    </div>
 
+    <div class="tituloH">HISTORIA DO VOLEIBOL</div>
+<div class="divona">
+    <div class="historiaTEXT"> &nbsp;&nbsp;&nbsp; O voleibol foi criado nos Estados Unidos, no dia 9 de fevereiro de
+        1895, pelo diretor de educação
+        física da ACM (Associação Cristã de Moços de Massachusetts) William George Morgan. <br>
+        &nbsp;&nbsp;&nbsp; Ao inventar o voleibol e suas regras, Morgan tinha como objetivo principal a criação de um
+        esporte sem contato físico
+        entre os jogadores. Desta forma, ele pretendia oferecer às pessoas (principalmente aos mais velhos) um esporte
+        em que as
+        lesões físicas, provocadas por choques entre pessoas, seriam raras. <br>
+        &nbsp;&nbsp;&nbsp; William George Morgan, professor e diretor de Educação Física na Associação Cristã de Moços
+        (ACM), idealizou um jogo em que
+        a probabilidade dos participantes se machucarem, em detrimento de contato físico, fossem baixas. Outro fator
+        importante - e pensado nos jogadores mais velhos
+        - era que o esporte não fosse fisicamente tão exigente. <br>
 
 
     </div>
+    <div class="imgH">
+        <img style="height: 300px; margin-left: 4px;" src="../imgs/willian Morgan.jpg" alt="">
+    </div>
+</div>
+    <div class="historiaTEXT2"></div>
+    &nbsp;&nbsp;&nbsp; Na época, o basquete estava na moda. Havia sido criado 4 anos antes, também por um professor de
+    educação física da Associação Cristão dos Moços, que
+    inventou o esporte em alternativa a jogos mais violentos como o basebol e o futebol. <br>
+
+    &nbsp;&nbsp;&nbsp; Na época, o basquete estava na moda. Havia sido criado 4 anos antes, também por um professor de
+    educação física da Associação Cristão dos Moços, que
+    E assim surgiu o vôlei - chamado de "mintonette" - que, graças ao fato de cada uma das equipes ficarem separadas por
+    uma rede, trazia menos chances de lesões.
+    </div>
+    <div class="imgH"></div>
+
+
+
+
+
 
 </body>
 
 </html>
+<script>
+
+
+
+
+
+</script>

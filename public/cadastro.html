@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPTRAINNERS</title>
+    <link rel="icon" href="../imgs/logo verde sem fundo e cortada.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #ffff;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        .header {
+            border-bottom: 4px solid #17244d;
+           background-color: white;
+           position: fixed;
+           width: 100%;
+           z-index: 100;
+           
+        }
+
+        .header .container {
+            justify-content: space-between;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #07cd09;
+        }
+
+        .agora {
+            font-weight: 800;
+        }
+
+        .navbar {
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            color: #07cd09;
+           
+        }
+
+
+        .titulo {
+            margin-right: 340px;
+            color: #07cd09;
+            width: fit-content;
+            font-weight: 500;
+        }
+
+        #logo_1 {
+            margin-left: 30px;
+            height: fit-content;
+
+        }
+
+        a:link {
+            font-weight: Segoe UI;
+            color: #17244d;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0px 13px 0px 13px;
+        }
+
+        a:visited {
+            color: #17244d;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            font-weight: Segoe UI;
+            background-color: #d0e2eaab;
+            color: #2c7da2;
+            border-radius: 8px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f2fafd;
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #6dc740;
+            border: 0.1px solid #17244d;
+            border-radius: 3px;
+        }
+        .container {
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+  .card {
+  margin-top: 10%;
+  margin-bottom: 7%;
+  
+  }
+  
+  
+          .banner {
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url("../imgs/fundoBolas.png");
+  
+  }
+          .banner .container .card {
+    background-color: #f2fafd;
+    height: fit-content;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    color:#07cd09;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card h2 {
+    font-size: 30px;
+  }
+  
+  .card h4 {
+    font-size: 16px;
+  }
+  
+  .banner #div_erros_login {
+    margin-top: 15px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  .alerta_erro{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    position: fixed;
+    border-radius: 4px;
+    border: #17244d 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .formulario .tipo_campo {
+    font-size: 20px;
+    font-weight: 600 !important;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    border: 2px solid #07cd09;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color:#07cd09;
+    width: 120px;
+    align-self: center;
+    margin-top: 5px;
+  }
+  
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+   .input {
+  margin-bottom: 10px;
+  border: 2px solid #07cd09;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.select-style {
+  display: flex;
+  padding: 10px;
+  border: 2px solid #07cd09;
+  width: 205px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+.select-style select {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+
+  .footer {
+  height: 200px;
+  width: 100%;
+  background-color: #6dc740;
+  border-top: 4px solid #17244d;
+  
+          }
+  
+  
+  .footer {
+    justify-content: center;
+  }
+  .container {
+  justify-content: center;
+  
+  }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <h1 class="titulo">UpTrainners</h1>
+            <ul class="navbar">
+                <li class="agora">Cadastro</li>
+               
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header fim-->
+
+
+    <div class="banner ">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
+        <div class="container tamanho-conteudo">
+            <div class="card medio">
+                <h2>Bem-vindo!</h2>
+                <div class="formulario">
+
+                    <!--
+                         Para inserir mais um campo, copie uma das inputs abaixo.
+                         Assim que inserir vá para o script abaixo.
+                     -->
+
+
+                     <span class="tipo_campo">CPF</span>
+                    <input id="cpf_input" type="text" placeholder="Seu CPF">
+
+                    <span class="tipo_campo">Nome:</span>
+                    <input id="nome_input" type="text" placeholder="Seu nome">
+
+                    <span class="tipo_campo">Sobrenome:</span>
+                    <input id="sobrenome_input" type="text" placeholder="Seu nome">
+
+                    <span class="tipo_campo">Telefone:</span>
+                    <input id="tel_input" type="text" placeholder="Seu telefone">                   
+
+                    <span class="tipo_campo">E-mail:</span>
+                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
+
+                    <span class="tipo_campo">Senha:</span>
+                    <input id="senha_input" type="password" placeholder="******">
+                    
+                    <span class="tipo_campo">Curso escolhido:</span>
+                    <div class="select-style">
+                    <select id="sel_curso">
+                    
+                    <option value="">--Selecione o curso--</option>
+                    <option value="1">Advanced Master</option>
+                    <option value="2">Advanced</option>
+                    <option value="3">Intermediário</option>
+                    <option value="4">Básico</option>
+                   
+                    </select>
+                </div>
+
+
+                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
+
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                    <img src="../imgs/load green.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer inicio-->
+    <div class="footer">
+        <div class="container">
+            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
+        </div>
+    </div>
+    <!--footer fim-->
+
+
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var cpfVar = cpf_input.value;
+        var telVar = tel_input.value; 
+        var nomeVar = nome_input.value;
+        var sobrenomeVar = sobrenome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var cursoVar = sel_curso.value;
+       
+
+        if (cpfVar == "" ||telVar == "" || nomeVar == "" ||sobrenomeVar == "" || emailVar == "" || senhaVar == "" || cursoVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                cpfserver: cpfVar,
+                telServer: telVar,
+                nomeServer: nomeVar,
+                sobrenomeServer: sobrenomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+                cursoServer: cursoVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+                
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>

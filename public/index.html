@@ -114,10 +114,10 @@
         /* BANNER */
 
         .banner {
-            height: fit-content;    
+            height: fit-content;            
             padding: 40px 0;
             color: white;
-            background-image: url("../imgs/banner_com_letra.jpg");
+            background-image: url("../public/assets/imgs/banner_com_letra.jpg");
             background-size: cover;
 
 border-bottom: 4px solid #17244d;
@@ -218,8 +218,81 @@ height: 200px;
 width: 100%;
 background-color: #6dc740;
 border-top: 4px solid #17244d;
+align-items: center;
+justify-content: center;
 
         }
+        .rodape {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #505050;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_rodape {
+    height: 50px;
+    width: 242px;
+    margin: 10px;
+    margin-top: 10px;
+}
+.container_rodape {
+    margin-top: 50px;
+    height: 90%;
+    width: 80%;
+    display: flex;
+}
+.contato {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.informacoes_contato{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contato_imagem{
+    width: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contato span{
+    margin-left: 3%;
+    font-weight: 500;
+}
+.contato h2{
+    margin-left: 5%;
+}
+.redes_sociais_imagens{
+    margin-left: 5%;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.coluna{
+display:flex;
+}
+
+#parceria-icon{
+    padding-right: 8px;
+}
+.mind{
+margin:0
+
+}
+h2{
+    padding: 0;
+}
+
+
 
     </style>
 
@@ -229,7 +302,7 @@ border-top: 4px solid #17244d;
 <body>
     <div class="header">
         <div class="container">
-            <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <img src="C:\Users\julia\Downloads\Site - vôlei img\Site-V-lei_individual\imgs\4.png" style="height: 90px;" id="logo_1" alt="">
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
                 <li class="agora">Inicial</li>
@@ -271,7 +344,27 @@ border-top: 4px solid #17244d;
     </div>
 
     <div class="footer">
-
+        <div class="coluna">
+        <img class="img_rodape" src="../public/assets/imgs/logo verde sem fundo e cortada.png" style="height: 100px;width: 100px;">
+                    <br>
+                    
+                    <div class="contato_imagem">
+                        <img src="../imgs/mail-icon-white-12.png" alt="">
+                        <span>uptrainners.contato@gmail.com</span>
+                    </div>
+                    <div class="contato_imagem">
+                        <img id="imagem_telefone" src="../public/assets/imgs/telefoneSymbol.png" alt="">
+                        <span>(11) 94115-5470</span>
+                    </div>
+                </div>
+<div class="mind">
+                    <h2>Redes sociais</h2>
+                    <div class="redes_sociais_imagens">
+                        <img src="../imgs/facebookSymbol.png" alt="">
+                        <img src="../imgs/instagramSymbol.png" alt="">
+                        <img src="../imgs/linkedinSymbol.png" alt="">
+                    </div>
+                </div>
     </div>
 
 
