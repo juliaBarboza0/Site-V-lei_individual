@@ -127,7 +127,7 @@ margin-bottom: 7%;
   height: fit-content;
   padding: 40px 0;
   color: white;
-  background-image: url("../imgs/fundoBolas.png");
+  background-image: url("./assets/imgs/fundoBolas.png");
 
 }
         .banner .container .card {
@@ -249,7 +249,7 @@ justify-content: center;
 
     <div class="header">
         <div class="container">
-            <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <img src="./assets/imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
                 <li class="agora">Login</li>
@@ -291,7 +291,7 @@ justify-content: center;
                 </div>
 
                 <div id="div_aguardar" class="loading-div">
-                    <img src="../imgs/load green.gif" id="loading-gif">
+                    <img src="./assets/imgs/load green.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
@@ -316,7 +316,7 @@ justify-content: center;
 
 
     function entrar() {
-        aguardar();
+        //aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
@@ -324,7 +324,7 @@ justify-content: center;
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+          //  finalizarAguardar();
             return false;
         }
         else {

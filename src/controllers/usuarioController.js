@@ -66,10 +66,12 @@ function cadastrar(req, res) {
     var tel= req.body.telServer
     var nome = req.body.nomeServer;
     var sobrenome = req.body.sobrenomeServer;
+    var idade = req.body.idadeServer
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     var curso = req.body.cursoServer;
-
+    
+    
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
@@ -83,11 +85,13 @@ function cadastrar(req, res) {
         res.status(400).send("Seu sobrenome está undefined!");
     } else if (tel == undefined) {
         res.status(400).send("Seu telefone está undefined!");
-        
-        
+    } else if (idade == undefined) {
+        res.status(400).send("Sua idade está undefined!");
+    } else {
+    console.log('Executando a query');   
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha,cpf, sobrenome, tel, curso)
-            (
+        usuarioModel.cadastrar(cpf, nome, sobrenome, idade, tel, email, senha, curso)
+            .then(
                 function (resultado) {
                     res.json(resultado);
                 }

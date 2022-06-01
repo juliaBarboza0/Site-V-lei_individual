@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPTRAINNERS</title>
-    <link rel="icon" href="../imgs/logo verde sem fundo e cortada.png">
+    <link rel="icon" href="./assets/imgs/logo verde sem fundo e cortada.png">
     <style>
         body {
             margin: 0;
@@ -126,7 +126,7 @@
     height: fit-content;
     padding: 40px 0;
     color: white;
-    background-image: url("../imgs/fundoBolas.png");
+    background-image: url("./assets/imgs/fundoBolas.png");
   
   }
           .banner .container .card {
@@ -281,7 +281,7 @@
 
     <div class="header">
         <div class="container">
-            <img src="../imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <img src="./assets/imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
                 <li class="agora">Cadastro</li>
@@ -322,7 +322,10 @@
                     <input id="nome_input" type="text" placeholder="Seu nome">
 
                     <span class="tipo_campo">Sobrenome:</span>
-                    <input id="sobrenome_input" type="text" placeholder="Seu nome">
+                    <input id="sobrenome_input" type="text" placeholder="Seu sobrenome">
+
+                    <span class="tipo_campo">Idade:</span>
+                    <input id="idade_input" type="text" placeholder="Sua Idade">
 
                     <span class="tipo_campo">Telefone:</span>
                     <input id="tel_input" type="text" placeholder="Seu telefone">                   
@@ -351,7 +354,7 @@
 
                 </div>
                 <div id="div_aguardar" class="loading-div">
-                    <img src="../imgs/load green.gif" id="loading-gif">
+                    <img src="./assets/imgs/load green.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
@@ -376,25 +379,25 @@
 
 <script>
     function cadastrar() {
-        aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
-        var cpfVar = cpf_input.value;
-        var telVar = tel_input.value; 
-        var nomeVar = nome_input.value;
-        var sobrenomeVar = sobrenome_input.value;
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
-        var cursoVar = sel_curso.value;
+        let cpfVar = cpf_input.value;
+        console.log(cpfVar)
+        let telVar = tel_input.value; 
+        let nomeVar = nome_input.value;
+        let sobrenomeVar = sobrenome_input.value;
+        let idadeVar = idade_input.value;
+        let emailVar = email_input.value;
+        let senhaVar = senha_input.value;
+        let cursoVar = sel_curso.value;
        
 
-        if (cpfVar == "" ||telVar == "" || nomeVar == "" ||sobrenomeVar == "" || emailVar == "" || senhaVar == "" || cursoVar == "") {
+        if (cpfVar == "" ||telVar == "" || nomeVar == "" ||sobrenomeVar == "" || idadeVar == "" || emailVar == "" || senhaVar == "" || cursoVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
-            finalizarAguardar();
-            return false;
+            return false;   
         }
         else {
             setInterval(sumirMensagem, 5000)
@@ -409,10 +412,11 @@
             body: JSON.stringify({
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
-                cpfserver: cpfVar,
+                cpfServer: cpf_input.value,
                 telServer: telVar,
                 nomeServer: nomeVar,
                 sobrenomeServer: sobrenomeVar,
+                idadeServer: idadeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
                 cursoServer: cursoVar
@@ -420,8 +424,9 @@
         }).then(function (resposta) {
 
             console.log("resposta: ", resposta);
-
+                
             if (resposta.ok) {
+                console.log('resposta está ok')
                 cardErro.style.display = "block";
 
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
@@ -430,14 +435,14 @@
                     window.location = "login.html";
                 }, "2000")
                 
-                limparFormulario();
-                finalizarAguardar();
+              //  limparFormulario();
+                //finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
+           // finalizarAguardar();
         });
 
         return false;
