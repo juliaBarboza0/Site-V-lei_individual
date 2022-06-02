@@ -226,17 +226,30 @@ input {
   width: 50px;
 }
 .footer {
-height: 200px;
-width: 100%;
-background-color: #6dc740;
-border-top: 4px solid #17244d;
+      width: 100vw;
+      height: 35vh;
+      padding: 0;
 
-        }
+      background-color:#6dc740;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 
+  .redessociais {
+      width: 15vw;
+      height: 6vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
-.footer {
-  justify-content: center;
-}
+  .insta {
+      width: 17vh;
+      height: 7vh;
+      border-radius: 2vh;
+  }
 .container {
 justify-content: center;
 
@@ -249,7 +262,8 @@ justify-content: center;
 
     <div class="header">
         <div class="container">
-            <img src="./assets/imgs/logo verde sem fundo e cortada.png" style="height: 90px;" id="logo_1" alt="">
+            <a href="./index.html"> <img src="../assets/imgs/logo verde sem fundo e cortada.png" style="height: 90px; "id="logo_1" alt=""></a>
+           
             <h1 class="titulo">UpTrainners</h1>
             <ul class="navbar">
                 <li class="agora">Login</li>
@@ -301,10 +315,15 @@ justify-content: center;
         </div>
     </div> 
 
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
+    <div class="footer"> 
+         
+        <h3> Me siga nas redes sociais para ficar atualizado sempre</h3>
+        <div class="redessociais">
+            
+            <img class="insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhAV14h-b1l08PUFdGUmvdbutyE1om8Q76EK41PZwShCyqM2rEB83_HVwIXLbA-JArGI&usqp=CAU">
+        
         </div>
+            
     </div>
   
 
