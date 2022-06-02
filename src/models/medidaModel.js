@@ -1,32 +1,38 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas(idAquario, limite_linhas) {
-    instrucaoSql = `select 
-                        temperatura, 
-                        umidade, 
-                        momento,
-                        DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico
-                    from medida
-                    where fk_aquario = ${idAquario}
-                    order by id desc limit ${limite_linhas}`;
+function votar(idJogador, limite_linhas){
+    instrucaoSql = `INSERT INTO
+    votacao (fkJogador) 
+    VALUES (${idJogador})`;
+    console.log('Executando a instrucao Sql: \n' + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
+function buscarUltimasMedidas(idJogador, limite_linhas) {
+
+    instrucaoSql = `select nome, count(fkJogador) as id 
+    from jogadores
+    join votacao
+    on fkJogador = idJogador
+    group by fkJogador
+    order by fkJogador`;
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
 
-function buscarMedidasEmTempoReal(idAquario) {
-    instrucaoSql = `select 
-                        temperatura, 
-                        umidade, DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico, 
-                        fk_aquario 
-                        from medida where fk_aquario = ${idAquario} 
-                    order by id desc limit 1`;
-
-    console.log("Executando a instrução SQL: \n" + instrucaoSql);
-    return database.executar(instrucaoSql);
+function buscarMedidasEmTempoReal(IdJogador) {
+    instrucaoSql = `select nome, count(fkJogador) as id from jogadores
+    join votacao
+    on fkJogador = idJogador
+    group by fkJogador
+    order by fkJogador`;
+console.log("Executando a instrução SQL: \n" + instrucaoSql);
+return database.executar(instrucaoSql);
 }
 
 
 module.exports = {
+    votar,
     buscarUltimasMedidas,
     buscarMedidasEmTempoReal
 }

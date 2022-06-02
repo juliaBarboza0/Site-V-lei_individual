@@ -88,8 +88,7 @@
 
     let proximaAtualizacao;
 
-    window.onload = () => {obterDadosGrafico(1),obterDadosGrafico(2),obterDadosGrafico(3),obterDadosGrafico(4),obterDadosGrafico(5),
-    obterDadosGrafico(6),obterDadosGrafico(7),obterDadosGrafico(8)};
+    window.onload = obterDadosGrafico(1);
 
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
@@ -104,13 +103,13 @@
         //     clearTimeout(proximaAtualizacao);
         // }
 
-        fetch(`/medidas/ultimas/${idJogador}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/medidas/votar/${idJogador}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                     resposta.reverse();
 
-                    plotarGrafico(resposta, idJogador); 
+                    obterDadosGrafico(resposta, idJogador); 
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -182,7 +181,7 @@
         console.log(JSON.stringify(dados));
 
         var ctx = canvas_grafico.getContext('2d');
-        window.grafico_linha = Chart.Line(ctx, {
+        window.grafico_linha = Chart.Bar(ctx, {
             data: dados,
             //Configurações do gráfico
             options: {
@@ -223,15 +222,15 @@
             }
         });
 
-        function sendData() {
-			var http = new XMLHttpRequest();
-			http.open('POST', 'http://localhost:3000/api/sendData', false);
-			http.send(null);
-		}
+        // function sendData() {
+		// 	var http = new XMLHttpRequest();
+		// 	http.open('POST', 'http://localhost:3000/api/sendData', false);
+		// 	http.send(null);
+		// }
 
-        setInterval(() => {
-			sendData();
-		}, 2000);
+        // setInterval(() => {
+		// 	sendData();
+		// }, 2000);
 
         //Atualiza os dados de 5 em 5 segundos
         // setTimeout(() => atualizarGrafico(idAquario, dados), 2000);
