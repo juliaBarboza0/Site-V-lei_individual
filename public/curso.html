@@ -117,88 +117,99 @@
             justify-items: center;
             background: rgb(172, 232, 142);
             background-color: linear-gradient(180deg, rgba(172, 232, 142, 1) 0%, rgba(177, 235, 149, 1) 19%, rgba(191, 239, 167, 1) 39%, rgba(199, 241, 177, 1) 63%);
-          
+
 
         }
-        .bolas{
+
+        .bolas {
             height: 100px;
-width: 100%;
-z-index: 10;
-display: flex;
-justify-content: center;
-  align-items: center;
-background-image: url(../assets/imgs/imagemdebolas2jpg.jpg);
+            width: 100%;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../assets/imgs/imagemdebolas2jpg.jpg);
 
-box-shadow: 3px 3px 3px  #17244d ;
+            box-shadow: 3px 3px 3px #17244d;
 
         }
-        #imgaula{
+
+        #imgaula {
             height: 350px;
             width: 60%;
-           margin-left: 250px;
-           margin-top: 70px;
-z-index: 10;
+            margin-left: 250px;
+            margin-top: 70px;
+            z-index: 10;
         }
-        .branco{
+
+        .branco {
             height: 100%;
             width: 55%;
             margin-left: 0px;
-z-index:2;
+            z-index: 2;
         }
-      .perguntas {
-          height: 250px;
-          width: 100%;
-border: #17244d solid 2px ;
-display: flex;
-flex-direction: row;
+
+        .perguntas {
+            height: 250px;
+            width: 100%;
+            border: #17244d solid 2px;
+            display: flex;
+           /* flex-direction: row; */
 
 
-      } 
-      .altura{
-        height: 250px;
-          width: 40%;
-border: red solid 2px ;
+        }
 
-      }
-      .resposta{
-        height: 250px;
-          width: 50%;
-          margin-left: 150px;
-border: yellow solid 2px ;
+        .altura {
+            height: 250px;
+            width: 50%;
+          
+            background-color: #c8f2b3;
+            border-radius: 0px 0px 30px 30px;
 
+        }
 
-      }
-      h2{
-color: #fff;
-font-size: 140%;
-
-      }
-      #in_altura{
-        font-family: "Barlow", sans-serif;
-  border: 0;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  background-color:#6dc740;
-  width: 150px;
-  margin-left: 35px;
-  align-self: center;
-  margin-top: 5px;
+        .quadro {
+            height: 100%;
+            width: 50%;
+          
+            border: yellow solid 2px;
 
 
-      }
-      #in_input{
-        margin-bottom: 10px;
-  border: 2px solid #6dc740;
-  padding: 15px;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 35px;
+        }
 
-      }
+        h2 {
+            color: black;
+            font-size: 140%;
+            padding: 15px;
 
+        }
+
+        #in_altura {
+            font-family: "Barlow", sans-serif;
+            border: 0;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            color: white;
+            background-color: #6dc740;
+            width: 150px;
+            margin-left: 35px;
+            align-self: center;
+            margin-top: 40px;
+
+
+        }
+
+        #in_input {
+            margin-top: 0px;
+            border: 2px solid #6dc740;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 35px;
+
+        }
     </style>
 
 
@@ -227,24 +238,22 @@ font-size: 140%;
 
     <div class="banner1">
         <img id="imgaula" src="../assets/imgs/imagem aulas.jpg" alt="">
-<div class="branco"></div>
+        <div class="branco"></div>
     </div>
     <div class="bolas">
 
     </div>
     <div class="perguntas">
-<div class="altura">
-    <h2>Informe sua altura e descubra a melhor indicação de posição para você iniciar seu curso:</h2>
-<input type="text" placeholder="Sua altura em cm" id="in_input"> 
-<button id="in_altura" onclick="altura()">Descubra sua posição</button>
+        <div class="altura">
+            <h2>Informe sua altura e descubra a melhor indicação de posição para você iniciar seu curso:</h2>
+            <input type="text" placeholder="Sua altura em cm" id="in_input">
+            <button id="in_altura" onclick="altura()">Descubra sua posição</button>
+        </div>
+            <div class="quadro">
+               
+            </div>
 
-<div class="quadro">
-    <div id="in_resposta">
-        jsdkasdajkcnan
-    </div>
-</div>
-
-</div>
+        
     </div>
     <div class="cards">
 
@@ -252,3 +261,16 @@ font-size: 140%;
 </body>
 
 </html>
+<script>
+function altura() {
+
+var altura = Number(in_input.value)
+var altura_jogador = Number 
+
+
+
+}
+
+
+
+</script>
