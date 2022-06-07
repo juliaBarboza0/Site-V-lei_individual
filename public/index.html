@@ -154,9 +154,9 @@ background-image: url(../assets/imgs/imagemdebolas2jpg.jpg);
 box-shadow: 3px 3px 3px #17244d ;
         }
         h2{
-color: #07cd09;
+color: white;
 font-weight: Segoe UI;
-text-shadow: 2px 2px 2px #135e14;
+text-shadow: 3px 3px 3px #135e14;
 font-size: 40px;
 
 
@@ -221,29 +221,34 @@ background-color: #6dc740;
 border-top: 4px solid #17244d;
 align-items: center;
 justify-content: center;
+align-items: center;
 
         }
-        .rodape {
-    margin-top: 100px;
+        .footer {
+    margin-top: 0px;
     width: 100%;
-    height: 400px;
-    background-color: #505050;
+    height: 300px;
+    background-color: #6dc740;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+   
 }
 .img_rodape {
     height: 50px;
     width: 242px;
     margin: 10px;
     margin-top: 10px;
+    flex-direction:row;
 }
 .container_rodape {
     margin-top: 50px;
     height: 90%;
     width: 80%;
     display: flex;
+    flex-direction: column;
 }
 .contato {
     width: 35%;
@@ -254,7 +259,7 @@ justify-content: center;
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:center;
 }
 .contato_imagem{
     width: 65%;
@@ -280,6 +285,18 @@ justify-content: center;
 }
 .coluna{
 display:flex;
+}
+.texto{
+    margin-top: 15px;
+    margin-left: 15px;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+font-size: 22px;
+
+
+
+
 }
 
 #parceria-icon{
@@ -325,6 +342,13 @@ h2{
         
  <h2 id="">SAIBA MAIS:</h1>
     </div>
+
+<div class="texto">
+   &nbsp;&nbsp;&nbsp;&nbsp; Somos uma organização que oferece diferente tipos de curso para o que você deseja, cursos profissionalizantes de vôlei ou até mesmo curso básico para você se divertir com seus amigos. Uma organização focada em trazer alegria e saúde para você, sua família e amigos. Venha fazer parte desse projeto e conhecer um pouco mais sobre nós é sobre vôlei:
+
+</div>
+
+
     <div class="banner_1">
 
         <div class="espaco1"> 
@@ -334,7 +358,7 @@ h2{
            <a href="./curso.html"> <img id="imgs" onclick="curso()"  style="height: 430px; width: 80%; margin-left: 40px;  margin-top: 30px;" src="../assets/imgs/curso.png" alt=""> </a>
         </div>
         <div class="espaco3">
-            <a href="./sobremim.html"><img id="imgs" onclick="sobremim()"  style="height: 430px; width: 80%; margin-left: 40px; margin-top: 30px;" src="../assets/imgs/quiz.png" alt=""> </a>
+            <a href="./sobremim.html"><img id="imgs" onclick="sobremim()"  style="height: 430px; width: 80%; margin-left: 40px; margin-top: 30px;" src="../assets/imgs/volleyball UPTRANNERS.png" alt=""> </a>
 
 
         </div>
@@ -342,29 +366,26 @@ h2{
 
 
     </div>
+    
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <div class="footer">
+            <h1> <a href="">CONTATE-NOS</a></h1>
+            <p>
+                Rua Otavio hildebrando, Mauá, São Caetano do Sul, SP  <br>
+                Whatsapp: (11) 92344-0945 || Telefone: (11) 2273-2349|| Email: uptrainnerscontato@gmail.com
+            </p>
+            <ul class="sociais">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+     
+    
+    </footer>
 
-    <div class="footer">
-        <div class="coluna">
-        <img class="img_rodape" src="./assets/imgs/logo sem fundo e cortada.png" style="height: 100px;width: 100px;">
-                    <br>
-                    
-                    <div class="contato_imagem">
-                        <img src="./assets/imgs/mail-icon-white-12.png" alt="">
-                        <span>uptrainners.contato@gmail.com</span>
-                    </div>
-                    <div class="contato_imagem">
-                        <img id="imagem_telefone" src="./assets/imgs/telefoneSymbol.png" alt="">
-                        <span>(11) 94115-5470</span>
-                    </div>
-                </div>
-<div class="mind">
-                    <h2>Redes sociais</h2>
-                    <div class="redes_sociais_imagens">
-                        <img src="./assets/imgs/facebookSymbol.png" alt="">
-                        <img src="./assets/imgs/instagramSymbol.png" alt="">
-                        <img src="./assets/imgs/linkedinSymbol.png" alt="">
-                    </div>
-                </div>
     </div>
 
 

@@ -115,9 +115,10 @@
             height: 420px;
             width: 100%;
             justify-items: center;
-            background: rgb(172, 232, 142);
-            background-color: linear-gradient(180deg, rgba(172, 232, 142, 1) 0%, rgba(177, 235, 149, 1) 19%, rgba(191, 239, 167, 1) 39%, rgba(199, 241, 177, 1) 63%);
-
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(169, 230, 136, 1) 80%, rgba(169, 230, 136, 1) 100%);
+            display: flex;
+            justify-content: space-around;
 
         }
 
@@ -128,42 +129,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url(../assets/imgs/imagemdebolas2jpg.jpg);
-
+            background-color:  rgb(193 239 168);;
+            /* background-image: url(../assets/imgs/imagemdebolas2jpg.jpg); */
+            margin-bottom: 4.5px;
             box-shadow: 3px 3px 3px #17244d;
+            border-top: black 1px solid;
 
         }
 
         #imgaula {
             height: 350px;
             width: 60%;
-            margin-left: 250px;
+            margin-right: 160px;
             margin-top: 70px;
             z-index: 10;
         }
 
-        .branco {
-            height: 100%;
-            width: 55%;
-            margin-left: 0px;
-            z-index: 2;
-        }
-
-        .perguntas {
-            height: 250px;
-            width: 100%;
-            border: #17244d solid 2px;
-            display: flex;
-           /* flex-direction: row; */
 
 
-        }
+
 
         .altura {
             height: 250px;
             width: 50%;
-          
-            background-color: #c8f2b3;
+            ;
             border-radius: 0px 0px 30px 30px;
 
         }
@@ -171,7 +160,7 @@
         .quadro {
             height: 100%;
             width: 50%;
-          
+
             border: yellow solid 2px;
 
 
@@ -210,6 +199,143 @@
             margin-left: 35px;
 
         }
+
+        .categorias {
+            color:#17244d;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            font-weight:600;
+            /* text-shadow: 3px 3px 3px black; */
+            font-size: 50px;
+
+
+        }
+        .footer {
+height: 200px;
+width: 100%;
+background-color: #6dc740;
+border-top: 4px solid #17244d;
+align-items: center;
+justify-content: center;
+align-items: center;
+
+        }
+        .footer {
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: #6dc740;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+        .cards {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+        }
+
+        #cards {
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px #17244d;
+
+        }
+
+        .desconto {
+            margin: 20px 0px 0px 10px;
+            height: 250px;
+            width: 97%;
+            display: flex;
+            justify-content: space-around;
+            border: #07cd09 4px dashed;
+            align-items: center;
+            justify-items: auto;
+            color: black;
+            font-weight: Segoe UI;
+            /* text-shadow: 3px 3px 3px #135e14; */
+            font-size: 15px;
+
+
+
+        }
+
+        .renda {
+            height: 100%;
+
+
+
+            align-items: center;
+            justify-items: auto;
+            padding-left: 20px;
+            width: 40%;
+            padding-top: 0;
+            border-left: #07cd09 4px dashed;
+            border-right: #07cd09 4px dashed;
+        }
+
+        .resultado {
+            height: 100%;
+            width: 20%;
+            align-items: center;
+            justify-items: auto;
+            border: #07cd 4px solid;
+            color: black;
+            font-size: 102%;
+
+            margin-left: 7px;
+
+            border: #07cd09 4px dashed;
+
+        }
+
+        input {
+            margin-bottom: 10px;
+            border: 2px solid #08c531;
+            padding: 5px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .btn {
+            font-family: "Barlow", sans-serif;
+            border: 0;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 10px 10px;
+            color: white;
+            background-color: #07cd09;
+            width: 120px;
+            align-self: center;
+            margin-top: 5px;
+        }
+
+        #sel_curso {
+            display: flex;
+
+            border: 2px solid #07cd09;
+
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        #sel_curso select {
+            align-self: center;
+            text-align: center;
+            width: 30px;
+            border: none;
+            box-shadow: none;
+            background: transparent;
+            background-image: none;
+            -webkit-appearance: none;
+        }
     </style>
 
 
@@ -237,40 +363,101 @@
     </div>
 
     <div class="banner1">
-        <img id="imgaula" src="../assets/imgs/imagem aulas.jpg" alt="">
         <div class="branco"></div>
+        <img id="imgaula" src="../assets/imgs/imagem aulas.jpg" alt="">
+
     </div>
     <div class="bolas">
-
-    </div>
-    <div class="perguntas">
-        <div class="altura">
-            <h2>Informe sua altura e descubra a melhor indicação de posição para você iniciar seu curso:</h2>
-            <input type="text" placeholder="Sua altura em cm" id="in_input">
-            <button id="in_altura" onclick="altura()">Descubra sua posição</button>
-        </div>
-            <div class="quadro">
-               
-            </div>
-
-        
+        <span class="categorias">Categorias:</span>
     </div>
     <div class="cards">
+        <img id="cards" src="../assets/imgs/vo.png" alt="">
+        <img id="cards" src="../assets/imgs/lei.png" alt="">
+        <img id="cards" src="../assets/imgs/car.png" alt="">
+        <img id="cards" src="../assets/imgs/ds.png" alt="">
+
+
 
     </div>
+
+    <div class="desconto">
+
+        <h2>Descubra se você tem acesso a algum desconto em nossos cursos</h2> <br>
+        <div class="renda">
+            <h1>Informe sua renda:</h1> <br>
+            <input type="number" placeholder="Informe sua renda" id="in_renda">
+            <select id="sel_curso">
+
+                <option value="">--Selecione o curso--</option>
+                <option value="750">Advanced Master</option>
+                <option value="750">Advanced</option>
+                <option value="650">Intermediário</option>
+                <option value="450">Básico</option>
+
+            </select>
+            <button onclick="valor()" class="btn">Desconto</button>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+
+    </div>
+
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <div class="footer">
+            <h1> <a href="">CONTATE-NOS</a></h1>
+            <p>
+                Rua Otavio hildebrando, Mauá, São Caetano do Sul, SP  <br>
+                Whatsapp: (11) 92344-0945 || Telefone: (11) 2273-2349|| Email: uptrainnerscontato@gmail.com
+            </p>
+            <ul class="sociais">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+     
+    
+    </footer>
+
+
+
 </body>
 
 </html>
 <script>
-function altura() {
+    function valor() {
+        resultado.innerHTML = ''
+        var curso = Number(sel_curso.value)
+        var renda = Number(in_renda.value)
+        var conta = curso * 0.30
 
-var altura = Number(in_input.value)
-var altura_jogador = Number 
+        if (renda <= 1500 && conta >= 0) {
+
+            resultado.innerHTML = ` Parabéns você conseguiu R$${curso * 0.30} de desconto, aproveite que o curso agora está disponivel para você por R$${curso * 0.70} e cadastre-se para fazer parte dessa turma
+
+`
+        } if (renda > 1500 && renda <= 3000) {
+
+            resultado.innerHTML = ` Parabéns você conseguiu R$${curso * 0.20} de desconto, aproveite que o curso agora está disponivel para você por R$${curso * 0.80} e cadastre-se para fazer parte dessa turma`
+
+        } if (renda > 3000 && renda <= 4500) {
+
+            resultado.innerHTML = ` Parabéns você conseguiu R$${curso * 0.10} de desconto, aproveite que o curso agora está disponivel para você por R$${curso * 0.90} e cadastre-se para fazer parte dessa turma`
+
+        } if (renda > 4500) {
+
+            resultado.innerHTML = ` Parabéns você conseguiu 0 de desconto, aproveite que cadastre-se para fazer parte dessa turma`
+        }
+
+        resultado.innerHTML += `<a href="cadastro.html" id="cadas">Clique aqui e cadastre-se</a>`
 
 
 
-}
-
+    }
 
 
 </script>
